@@ -13,6 +13,19 @@
           .then(res => res.text())
           .then(data => document.getElementById('header').innerHTML = data);
           </script>
+          <header>
+            <img src="images/Logo.png" alt="Logo" class="headerlogo">
+            <nav>
+                <ul class="navi">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
         <h1 class="baskerFont">Custom Cakes For Any Occasion</h1>
         <section>
@@ -41,6 +54,12 @@
         <section>
             <img class="pricing" src="Images/pricing.jpg" alt="pricing">
         </section>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="SXDK86CHSS9MC" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+          </form>
   </main>
 </body>
 </html>
